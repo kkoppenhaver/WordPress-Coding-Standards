@@ -102,4 +102,12 @@
 	<!-- Check for deprecated WordPress functions. -->
 	<rule ref="WordPress.WP.DeprecatedFunctions"/>
 
+	<!-- If TGMPA is used, verify that the version is up to date. -->
+	<rule ref="WordPress.Theme.CorrectTGMPAVersions"/>
+		<!-- Require that the Custom Generator is used to download & adjust TGMPA. -->
+		<properties>
+			<property name="required_flavour" value="wporg"/>
+		</properties>
+	</rule>
+
 </ruleset>
